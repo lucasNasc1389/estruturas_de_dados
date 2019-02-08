@@ -13,10 +13,6 @@ import java.util.Objects;
  */
 public class Aluno {
     private String nome;
-
-    public Aluno(String nome) {
-        this.nome = nome;
-    }
     
     @Override
     public boolean equals(Object obj) {
@@ -33,7 +29,7 @@ public class Aluno {
         return nome;
     }
 
-    
-    
-    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }

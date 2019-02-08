@@ -19,6 +19,10 @@ public class Vetor {
         
     }
     
+    public void adiciona(int posicao, Aluno aluno) {
+        
+    }
+    
     public Aluno pega(int posicao) {
         return null;
         
