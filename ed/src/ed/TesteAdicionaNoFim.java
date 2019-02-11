@@ -23,7 +23,11 @@ public class TesteAdicionaNoFim {
         lista.adiciona(a1);
         lista.adiciona(a2);
         
+        Aluno a5 = new Aluno();
+        
         System.out.println(lista);
+        System.out.println(lista.contem(a5));
+        System.out.println(lista.pega(2));
         
     }
 }
