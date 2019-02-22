@@ -22,7 +22,17 @@ public class Vetor {
     }
 
     public void adiciona(int posicao, Aluno aluno) {
-
+         if (!this.posicaoValida(posicao)) {
+            throw new IllegalArgumentException("Posição Invalida");
+        }
+         
+         for(int i = this.totalDeAlunos - 1; i >= posicao; i -= 1 ) {
+             this.alunos[i + 1] = this.alunos[i];
+         }
+         
+         this.alunos[posicao] = aluno;
+         this.totalDeAlunos++;
+         
     }
 
     public Aluno pega(int posicao) {
@@ -56,7 +66,7 @@ public class Vetor {
     }
     
     private boolean posicaoValida(int posicao) {
-        return posicao >= 0 && posicao<= this.totalDeAlunos; 
+        return posicao >= 0 && posicao <= this.totalDeAlunos; 
     }
 
     public String toString() {
