@@ -54,6 +54,10 @@ public class Vetor {
     private boolean posicaoOcupada(int posicao) {
         return posicao >= 0 && posicao < this.totalDeAlunos;
     }
+    
+    private boolean posicaoValida(int posicao) {
+        return posicao >= 0 && posicao<= this.totalDeAlunos; 
+    }
 
     public String toString() {
         if (totalDeAlunos == 0) {
