@@ -57,14 +57,13 @@ public class Vetor {
 
     }
 
-    public boolean contem(Aluno aluno) {
+    public boolean contem(Object aluno) {
         for (int i = 0; i < this.totalDeObjetos; i++) {
             if (aluno.equals(this.objetos[i])) {
                 return true;
             }
         }
         return false;
-
     }
 
     public int tamanho() {

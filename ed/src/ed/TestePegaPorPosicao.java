@@ -23,8 +23,8 @@ public class TestePegaPorPosicao {
         lista.adiciona(a1);
         lista.adiciona(a2);
         
-        Aluno aluno1 = lista.pega(0);
-        Aluno aluno2 = lista.pega(1);
+        Object aluno1 = lista.pega(0);
+        Object aluno2 = lista.pega(1);
         
         System.out.println(aluno1);
         System.out.println(aluno2);

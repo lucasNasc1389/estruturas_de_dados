@@ -5,6 +5,8 @@
  */
 package ed;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author lucas
@@ -17,6 +19,7 @@ public class TesteAddEmDeterminadaPosicao {
         Aluno a2 = new Aluno();
         Aluno a3 = new Aluno();
         Aluno a4 = new Aluno();
+        Aluno a5 = new Aluno();
         Aluno intrusoA5 = new Aluno();
         
         a0.setNome("Lucas");
@@ -41,5 +44,15 @@ public class TesteAddEmDeterminadaPosicao {
         lista.adiciona(1, intrusoA5);
         
         System.out.println(lista);
+        
+        a5.setNome("teste");
+        ArrayList lista2 = new ArrayList();
+        lista2.add(a4);
+        lista2.add(a2);
+        lista2.add(a5);
+        lista2.add(a0);
+        lista2.add(a5);
+        System.out.println(lista2.lastIndexOf(a5));
+        
     }
 }
