@@ -3,31 +3,35 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed;
+package executandoVetores;
+
+import objetosParaExemplos.Aluno;
+import objetosParaExemplos.Vetor;
 
 /**
  *
- * @author lucas
+ * @author User
  */
-public class TesteAdicionaNoFim {
+public class TesteContemAluno {
+
     public static void main(String[] args) {
-        
         Aluno a1 = new Aluno();
         Aluno a2 = new Aluno();
         
-        a1.setNome("Lucas");
-        a2.setNome("Vitor");
+        a1.setNome("Rafael");
+        a2.setNome("Paulo");
         
         Vetor lista = new Vetor();
         
         lista.adiciona(a1);
         lista.adiciona(a2);
         
-        Aluno a5 = new Aluno();
+        System.out.println(lista.contem(a1));
+        System.out.println(lista.contem(a2));
         
-        System.out.println(lista);
-        System.out.println(lista.contem(a5));
-        System.out.println(lista.pega(2));
+        Aluno aluno = new Aluno();
+        aluno.setNome("Ana");
         
+        System.out.println(lista.contem(aluno));
     }
 }

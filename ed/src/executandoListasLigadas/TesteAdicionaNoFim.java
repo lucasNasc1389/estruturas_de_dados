@@ -3,27 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed;
+package executandoListasLigadas;
+
+import listasLigadas.ListaLigada;
 
 /**
  *
- * @author User
+ * @author lucas
  */
-public class TesteRemovePorPosicao {
-
+public class TesteAdicionaNoFim {
     public static void main(String[] args) {
-        Aluno a1 = new Aluno();
-        Aluno a2 = new Aluno();
+        ListaLigada lista = new ListaLigada();
         
-        a1.setNome("Rafael");
-        a2.setNome("Paulo");
+        lista.adiciona("Rafael");
+        lista.adiciona("Paulo");
         
-        Vetor lista = new Vetor();
+        System.out.println(lista);
         
-        lista.adiciona(a1);
-        lista.adiciona(a2);
-        
-        lista.remove(0);
+        lista.adiciona("Dunha");
         
         System.out.println(lista);
     }

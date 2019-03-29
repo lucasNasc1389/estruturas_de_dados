@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testesListasLigadas;
+package executandoListasLigadas;
 
 import listasLigadas.ListaLigada;
 
@@ -11,14 +11,15 @@ import listasLigadas.ListaLigada;
  *
  * @author lucas
  */
-public class TesteAdicionaNoComeco {
+public class TesteAdicionaPorPosicao {
     public static void main(String[] args) {
         ListaLigada lista = new ListaLigada();
         
-        lista.adiciona("John");
-        lista.adicionaNoComeco("Lucas");
-        lista.adicionaNoComeco("Rafael");
+        lista.adiciona(0, "Lucas");
+        lista.adiciona(1, "Camila");
+        lista.adiciona(0, "Vitor");
         
         System.out.println(lista);
     }
+    
 }

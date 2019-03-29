@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed;
+package executandoVetores;
+
+import objetosParaExemplos.Aluno;
+import objetosParaExemplos.Vetor;
 
 /**
  *
  * @author User
  */
-public class TesteContemAluno {
+public class TestePegaPorPosicao {
 
     public static void main(String[] args) {
         Aluno a1 = new Aluno();
         Aluno a2 = new Aluno();
-        
+
         a1.setNome("Rafael");
         a2.setNome("Paulo");
         
@@ -23,12 +26,10 @@ public class TesteContemAluno {
         lista.adiciona(a1);
         lista.adiciona(a2);
         
-        System.out.println(lista.contem(a1));
-        System.out.println(lista.contem(a2));
+        Object aluno1 = lista.pega(0);
+        Object aluno2 = lista.pega(1);
         
-        Aluno aluno = new Aluno();
-        aluno.setNome("Ana");
-        
-        System.out.println(lista.contem(aluno));
+        System.out.println(aluno1);
+        System.out.println(aluno2);
     }
 }

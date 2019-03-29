@@ -3,27 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed;
-
-import java.util.Objects;
+package objetosParaExemplos;
 
 /**
  *
  * @author lucas
  */
-public class Aluno {
-    private String nome;
+public class Peca {
     
-    @Override
-    public boolean equals(Object obj) {
-        Aluno outro = (Aluno) obj;
-        return outro.getNome().equals(this.nome);
-    }
-
-    @Override
-    public String toString() {
-        return nome;
-    }
+    private String nome;
 
     public String getNome() {
         return nome;

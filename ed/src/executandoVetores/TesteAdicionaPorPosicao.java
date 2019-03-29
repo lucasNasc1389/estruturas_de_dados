@@ -3,30 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed;
+package executandoVetores;
+
+import objetosParaExemplos.Aluno;
+import objetosParaExemplos.Vetor;
 
 /**
  *
  * @author User
  */
-public class TestePegaPorPosicao {
+public class TesteAdicionaPorPosicao {
 
     public static void main(String[] args) {
         Aluno a1 = new Aluno();
         Aluno a2 = new Aluno();
+        Aluno a3 = new Aluno();
 
         a1.setNome("Rafael");
         a2.setNome("Paulo");
-        
+        a3.setNome("Ana");
+
         Vetor lista = new Vetor();
+
+        lista.adiciona(0, a1);
+        lista.adiciona(1, a2);
+        lista.adiciona(2, a3);
         
-        lista.adiciona(a1);
-        lista.adiciona(a2);
+        System.out.println(lista);
         
-        Object aluno1 = lista.pega(0);
-        Object aluno2 = lista.pega(1);
-        
-        System.out.println(aluno1);
-        System.out.println(aluno2);
     }
 }
